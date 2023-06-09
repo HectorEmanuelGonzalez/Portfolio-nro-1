@@ -1,0 +1,16 @@
+//pantalla extra grande
+
+@media (min-width: 1400px){
+    .header {
+        width: 60%;
+        margin: auto;
+    }    
+}
+
+//pantallas medianas 
+
+@media(max-width: 992){
+    .header {
+        
+    }
+}

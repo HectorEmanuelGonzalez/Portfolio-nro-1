@@ -1,0 +1,60 @@
+.skill{
+    width: 100%;
+    margin: 100px auto;
+    padding: 40px;
+    display: grid;
+    grid-template-columns:  1fr ;
+    .heading{
+        .text-heading{
+            display: flex;
+            margin-right: 2rem;
+            white-space: nowrap;
+            font-size: 25px;
+            color: rgb(244, 244, 244, .9);
+            text-transform: capitalize;
+        }
+
+        .text-heading:after {
+            content: "";
+            display: block;
+            margin: auto 0;
+            margin-left: 30px;
+            width: 50%;
+            max-width: 400px;
+            height: 1px;
+            background-color: rgba(221, 47, 199, 0.9);
+        }
+    }
+
+    .box-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+        gap: 20px;    
+    }
+
+    .box{
+        background-color: #222831;
+        border-radius: 1rem;
+        border:solid 1px #222831;
+        padding: 1rem 1rem;
+        text-align: center;
+        transition: all .3s ease;
+        .icons{
+            width:80px ;
+            height: 80px;
+        }
+    }
+
+    h3 {
+        font-size: 2rem;
+        color:rgb(221, 47, 199, 0.9);
+    }
+    p {
+        padding: 1rem 0;
+        font-size: 1.4;
+        color: aliceblue;
+        line-height: 2;
+    }
+        
+       
+}
