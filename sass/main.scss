@@ -18,6 +18,19 @@ body{
     font-family: 'Heebo', sans-serif;
     
 }
+.scroll-section {
+    opacity: 0; /* Inicialmente oculto */
+    transform: translateY(20px); /* Desplazado hacia abajo */
+    transition: opacity 1s ease, transform 1s ease; /* Transiciones suaves */
+  
+}
+.scroll-section.show {
+    opacity: 1; /* Mostrar */
+    transform: translateY(0); /* Sin desplazamiento */
+  
+}
+  
+  
 .header {
     width: 100%;
     height: 500px;

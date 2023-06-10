@@ -132,6 +132,15 @@ h3 {
 .abaut-h2 {
   margin-left: 50px;
 }
+.abaut-h2 .scroll-content {
+  opacity: 0; /* Inicialmente oculto */
+  transform: translateY(20px); /* Desplazado hacia abajo */
+  transition: opacity 0.5s ease, transform 0.5s ease; /* Transiciones suaves */
+}
+.abaut-h2 .scroll-content.show {
+  opacity: 1; /* Mostrar */
+  transform: translateY(0); /* Sin desplazamiento */
+}
 .abaut-h2 .conoceme {
   display: flex;
   margin-right: 2rem;
@@ -518,6 +527,17 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Heebo", sans-serif;
+}
+
+.scroll-section {
+  opacity: 0; /* Inicialmente oculto */
+  transform: translateY(20px); /* Desplazado hacia abajo */
+  transition: opacity 1s ease, transform 1s ease; /* Transiciones suaves */
+}
+
+.scroll-section.show {
+  opacity: 1; /* Mostrar */
+  transform: translateY(0); /* Sin desplazamiento */
 }
 
 .header {

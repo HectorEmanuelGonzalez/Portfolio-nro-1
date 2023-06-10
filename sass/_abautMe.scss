@@ -82,6 +82,15 @@
 }
 .abaut-h2 {
     margin-left: 50px;
+    .scroll-content {
+        opacity: 0; /* Inicialmente oculto */
+        transform: translateY(20px); /* Desplazado hacia abajo */
+        transition: opacity 0.5s ease, transform 0.5s ease; /* Transiciones suaves */
+    }
+      .scroll-content.show {
+        opacity: 1; /* Mostrar */
+        transform: translateY(0); /* Sin desplazamiento */
+    }
     .conoceme {
         display: flex;
         margin-right: 2rem;
